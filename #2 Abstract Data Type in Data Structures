@@ -1,1 +1,33 @@
 
+Abstract Data Type(ADT) in Data Structure
+
+In this video we will see :
+- Example of Abstract Data Type in Data Structure
+- What is Data type
+- Primitive Data Type
+- Complex Data Type
+- Variables
+- Abstract
+- Associated operation with data type
+- Types of Data type
+- Different Abstract Data Type
+  - List, Stack, Queue, Map
+- Hashmap
+- Linked list
+
+Abstract Data type is a type for objects whose behavior is defined by a set of value and a set of operations.
+Some types of ADT are :
+List : a List is an ADT that represents a countable number of ordered values, where the same value may occur more than once.
+A list can often be constructed by writing the items in sequence, separated by commas, semicolons, or spaces,
+
+Stack : It is Last-In-First-Out (LIFO) DS
+The name "stack" for this type of structure comes from the analogy to a set of physical items stacked on top of each other, which makes it easy to take an item off the top of the stack, 
+while getting to an item deeper in the stack may require taking off multiple other items first
+We can perform 2 operation on it :
+PUSH : which adds an element to the collection, and
+POP : which removes the most recently added element that was not yet removed
+
+Queue : Is is a First-In-First-Out (FIFO) data structure.
+In a FIFO data structure, the first element added to the queue will be the first one to be removed. 
+
+Map : It is a generalization of a map or associative array abstract data type in which more than one value may be associated with and returned for a given key.
