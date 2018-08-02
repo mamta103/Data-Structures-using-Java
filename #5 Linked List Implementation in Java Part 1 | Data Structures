@@ -1,1 +1,79 @@
 
+package datastructure;
+
+public class Node {
+	private int data;
+	private Node next;
+
+	public int getData() {
+		return data;
+	}
+
+	public void setData(int data) {
+		this.data = data;
+	}
+
+	public Node getNext() {
+		return next;
+	}
+
+	public void setNext(Node next) {
+		this.next = next;
+	}
+
+}
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+package datastructure;
+
+public class LinkedList {
+	Node headNode;
+
+	public void insertionBeforeHeadNode(int data){
+		Node node= new Node();
+		node.setData(data);
+		node.setNext(null);
+			node.setNext(headNode);
+			headNode= node;
+	}
+	public void insertionEnd(int data) {
+		Node newNode = new Node();
+		newNode.setData(data);
+		newNode.setNext(null);
+		if (headNode == null) {
+			headNode = newNode;
+		}
+		else {
+			Node n = headNode;
+			while (n.getNext() != null) {
+             n= n.getNext();
+			}
+			n.setNext(newNode);
+		}
+	}
+	public void show(){
+		Node node= headNode;
+		while(node.getNext()!=null){
+			System.out.print(node.getData()+" ->");
+			node= node.getNext();
+		}
+		System.out.println(node.getData());
+	}
+}
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+package datastructure;
+
+
+public class MainLinkedList {
+	public static void main(String[] args) {
+		LinkedList linkedList = new LinkedList();
+		linkedList.insertionBeforeHeadNode(0);
+		linkedList.insertionEnd(3);
+		linkedList.insertionEnd(5);
+		linkedList.insertionEnd(7);
+		linkedList.insertionEnd(9);
+		linkedList.insertionEnd(11);
+		linkedList.show();
+		
+
+	}
+}
