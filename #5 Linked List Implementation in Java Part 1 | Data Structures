@@ -88,6 +88,7 @@ public class MainLinkedList {
 		linkedList.insertionEnd(7);
 		linkedList.insertionEnd(9);
 		linkedList.insertionEnd(11);
+		linkedList.insertAtMiddle(2,17);
 		linkedList.show();
 		
 
